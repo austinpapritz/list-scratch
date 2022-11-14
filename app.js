@@ -1,5 +1,5 @@
 /* Imports */
-
+import { getFullFellowship } from './fetch-utils.js';
 /* Get DOM Elements */
 
 /* State */
