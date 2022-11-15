@@ -32,7 +32,7 @@ export function renderFellow(fellow) {
 
     const raceEl = document.createElement('p');
     raceEl.textContent = fellow.race;
-    raceEl.classList.add('detail-stat');
+    raceEl.classList.add('detail-stat', 'detail-race');
 
     const weaponEl = document.createElement('p');
     weaponEl.textContent = fellow.weapon;

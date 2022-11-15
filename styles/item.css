@@ -13,13 +13,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: inset gold 30px;
+    border: inset goldenrod 30px;
     transition-property: border padding;
     transition-duration: 500ms;
 }
 
 .fellow-card:hover {
-    border: inset gold 50px;
+    border: inset goldenrod 50px;
     padding: 0px;
     /* transform: rotate(90deg); */
 }
@@ -78,7 +78,7 @@
 .detail-stat {
     margin: 0;
     font-size: 3rem;
-    color: gold;
+    color: goldenrod;
     background: rgba(0, 0, 0, 0.75);
     width: 100%;
     height: 100%;
@@ -91,4 +91,8 @@
 
 .detail-weapon::before {
     content: 'Weapon: ';
+}
+
+.detail-race::before {
+    content: 'Race: ';
 }
