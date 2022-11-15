@@ -7,6 +7,22 @@ export function renderFellowship(fellow) {
     nameEl.textContent = fellow.name;
     nameEl.classList.add('fellow-name');
 
+    const imgEl = document.createElement('img');
+    imgEl.src = `./assets/${fellow.id}.jpg`;
+
+    fellowEl.append(nameEl, imgEl);
+
+    return fellowEl;
+}
+
+export function renderFellow(fellow) {
+    const fellowEl = document.createElement('div');
+    fellowEl.classList.add('fellow-card');
+
+    const nameEl = document.createElement('p');
+    nameEl.textContent = fellow.name;
+    nameEl.classList.add('fellow-name');
+
     const titleEl = document.createElement('p');
     titleEl.textContent = fellow.title;
     titleEl.classList.add('fellow-stat');
