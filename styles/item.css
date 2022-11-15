@@ -42,6 +42,7 @@
     src: url('../assets/RingbearerMedium-51mgZ.ttf');
 }
 .fellow-name {
+    text-decoration: none;
     margin: 1px 1px;
     font-size: 2.3em;
     font-family: 'ringBearerFont';
