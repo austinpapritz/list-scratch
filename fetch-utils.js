@@ -8,3 +8,8 @@ export async function getFellowship() {
     const response = await client.from('balloons').select('*').order('id');
     return response.data;
 }
+
+export async function getFellow(id) {
+    const response = await client.from('balloons').select().match({ id: id }).single();
+    return response.data;
+}

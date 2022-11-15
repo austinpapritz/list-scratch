@@ -36,7 +36,7 @@ export function renderFellow(fellow) {
     weaponEl.classList.add('fellow-stat');
 
     const imgEl = document.createElement('img');
-    imgEl.src = `./assets/${fellow.id}.jpg`;
+    imgEl.src = `../assets/${fellow.id}.jpg`;
 
     fellowEl.append(nameEl, titleEl, raceEl, weaponEl, imgEl);
 
