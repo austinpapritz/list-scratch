@@ -1,7 +1,7 @@
 import { getFellow, getFellowship } from '../fetch-utils.js';
 import { renderFellow } from '../render-utils.js';
 
-const detailsEl = document.querySelector('.details-card');
+const detailsEl = document.querySelector('.details-card-container');
 
 window.addEventListener('load', async () => {
     const params = new URLSearchParams(window.location.search);
