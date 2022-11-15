@@ -11,6 +11,10 @@ export function renderFellowship(fellow) {
     titleEl.textContent = fellow.title;
     titleEl.classList.add('fellow-stat');
 
+    const raceEl = document.createElement('p');
+    raceEl.textContent = fellow.race;
+    raceEl.classList.add('fellow-stat');
+
     const weaponEl = document.createElement('p');
     weaponEl.textContent = fellow.weapon;
     weaponEl.classList.add('fellow-stat');
@@ -18,7 +22,7 @@ export function renderFellowship(fellow) {
     const imgEl = document.createElement('img');
     imgEl.src = `./assets/${fellow.id}.jpg`;
 
-    fellowEl.append(nameEl, titleEl, weaponEl, imgEl);
+    fellowEl.append(nameEl, titleEl, raceEl, weaponEl, imgEl);
 
     return fellowEl;
 }
