@@ -4,7 +4,7 @@ const SUPABASE_KEY =
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-export async function getFullFellowship() {
+export async function getFellowship() {
     const response = await client.from('balloons').select('*');
-    return response;
+    return response.data;
 }
