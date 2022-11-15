@@ -5,7 +5,7 @@ const SUPABASE_KEY =
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getFullFellowship() {
-    const response = await client.from('games').select('*');
+    const response = await client.from('Lord of the Balloons').select('*');
     console.log(response.data);
     return response;
 }
